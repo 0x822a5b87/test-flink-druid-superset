@@ -1,0 +1,4 @@
+#factory
+
+com.xxx.flink.word.factory.ChangelogCsvFormatFactory
+com.xxx.flink.word.factory.TglogSerializationFormatFactory
