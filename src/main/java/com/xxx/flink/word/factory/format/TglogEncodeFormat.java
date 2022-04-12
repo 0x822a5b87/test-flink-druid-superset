@@ -24,7 +24,6 @@ public class TglogEncodeFormat implements EncodingFormat<SerializationSchema<Row
 
     @Override
     public SerializationSchema<RowData> createRuntimeEncoder(DynamicTableSink.Context context, DataType physicalDataType) {
-
         return new TglogSerializer(identifierName, columnDelimiter, physicalDataType);
     }
 
