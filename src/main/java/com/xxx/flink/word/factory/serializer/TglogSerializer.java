@@ -1,7 +1,6 @@
 package com.xxx.flink.word.factory.serializer;
 
 import org.apache.flink.api.common.serialization.SerializationSchema;
-import org.apache.flink.table.data.RawValueData;
 import org.apache.flink.table.data.RowData;
 import org.apache.flink.table.types.DataType;
 import org.apache.flink.table.types.logical.RowType;

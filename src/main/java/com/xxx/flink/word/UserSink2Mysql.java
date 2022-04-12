@@ -4,7 +4,6 @@ import org.apache.flink.table.api.EnvironmentSettings;
 import org.apache.flink.table.api.Table;
 import org.apache.flink.table.api.TableEnvironment;
 import org.apache.flink.table.api.TableResult;
-import org.apache.flink.table.catalog.ResolvedSchema;
 
 import static org.apache.flink.table.api.Expressions.$;
 
