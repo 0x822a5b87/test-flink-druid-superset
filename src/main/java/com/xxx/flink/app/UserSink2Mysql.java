@@ -1,4 +1,4 @@
-package com.xxx.flink.word;
+package com.xxx.flink.app;
 
 import org.apache.flink.table.api.EnvironmentSettings;
 import org.apache.flink.table.api.Table;

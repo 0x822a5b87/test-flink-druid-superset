@@ -1,4 +1,4 @@
-package com.xxx.flink.word;
+package com.xxx.flink.app;
 
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.java.tuple.Tuple3;
