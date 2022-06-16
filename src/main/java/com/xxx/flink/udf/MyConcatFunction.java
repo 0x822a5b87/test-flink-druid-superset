@@ -28,7 +28,7 @@ public class MyConcatFunction extends ScalarFunction {
                        + ") WITH (\n"
                        + "    'connector' = 'kafka',\n"
                        + "    'topic' = 'test',\n"
-                       + "    'properties.bootstrap.servers' = 'test.dc.data.woa.com:9092',\n"
+                       + "    'properties.bootstrap.servers' = '9.134.115.20:9092',\n"
                        + "\n"
                        + "    'properties.group.id' = 'testGroup',\n"
                        + "    'scan.startup.mode' = 'latest-offset',\n"
@@ -39,7 +39,7 @@ public class MyConcatFunction extends ScalarFunction {
 
         env.createTemporarySystemFunction("MyConcatFunction", new MyConcatFunction());
 
-        env.executeSql("select * from MyTable")
+        env.executeSql("select *,MyConcatFunction(name, addr) as str from MyTable")
            .print();
     }
 
