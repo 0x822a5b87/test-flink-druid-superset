@@ -1,6 +1,5 @@
-package com.xxx.flink.word.factory;
+package com.xxx.flink.format.tglog;
 
-import com.xxx.flink.word.factory.format.TglogEncodeFormat;
 import org.apache.flink.api.common.serialization.SerializationSchema;
 import org.apache.flink.configuration.ConfigOption;
 import org.apache.flink.configuration.ConfigOptions;
@@ -18,7 +17,7 @@ import java.util.Set;
 /**
  * @author 0x822a5b87
  */
-public class TglogSerializationFormatFactory implements SerializationFormatFactory {
+public class StdTglogSerializationFormatFactory implements SerializationFormatFactory {
 
     private final static String TGLOG_IDENTIFIER = "tglog";
 
@@ -40,7 +39,7 @@ public class TglogSerializationFormatFactory implements SerializationFormatFacto
         final String columnDelimiter = formatOptions.get(COLUMN_DELIMITER);
 
         // create and return the format
-        return new TglogEncodeFormat(context.getObjectIdentifier().getObjectName(), columnDelimiter);
+        return new StdTglogEncodeFormat(context.getObjectIdentifier().getObjectName(), columnDelimiter);
     }
 
     @Override

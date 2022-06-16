@@ -1,4 +1,4 @@
 #factory
 
-com.xxx.flink.word.factory.ChangelogCsvFormatFactory
-com.xxx.flink.word.factory.TglogSerializationFormatFactory
+com.xxx.flink.format.csv.ChangelogCsvFormatFactory
+com.xxx.flink.format.tglog.StdTglogSerializationFormatFactory

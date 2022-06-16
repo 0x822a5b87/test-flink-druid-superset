@@ -1,4 +1,4 @@
-package com.xxx.flink.word.factory.serializer;
+package com.xxx.flink.format.tglog;
 
 import org.apache.flink.api.common.serialization.SerializationSchema;
 import org.apache.flink.table.data.RowData;
@@ -9,7 +9,7 @@ import org.apache.flink.table.types.logical.RowType;
 /**
  * @author 0x822a5b87
  */
-public class TglogSerializer implements SerializationSchema<RowData> {
+public class StdTglogSerializer implements SerializationSchema<RowData> {
 
     private final String identifierName;
 
@@ -19,7 +19,7 @@ public class TglogSerializer implements SerializationSchema<RowData> {
 
     private RowData.FieldGetter[] fieldGetters;
 
-    public TglogSerializer(String identifierName, String columnDelimiter, DataType physicalDataType) {
+    public StdTglogSerializer(String identifierName, String columnDelimiter, DataType physicalDataType) {
         this.identifierName   = identifierName;
         this.columnDelimiter  = columnDelimiter;
         this.physicalDataType = physicalDataType;
